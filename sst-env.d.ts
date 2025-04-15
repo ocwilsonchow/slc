@@ -5,14 +5,13 @@
 
 declare module "sst" {
   export interface Resource {
-    "MyApi": {
-      "name": string
-      "type": "sst.aws.Function"
+    "SlcService": {
+      "service": string
+      "type": "sst.aws.Service"
       "url": string
     }
-    "MyBucket": {
-      "name": string
-      "type": "sst.aws.Bucket"
+    "SlcVpc": {
+      "type": "sst.aws.Vpc"
     }
   }
 }
